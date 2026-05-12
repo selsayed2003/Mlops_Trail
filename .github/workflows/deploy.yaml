@@ -43,7 +43,7 @@ jobs:
     steps:
       - uses: checkout/actions@v4
 
-      - name: download artifact
+      - name: download artifact 
         uses: checkout/download-artifact@v4
         with:
           name: file
