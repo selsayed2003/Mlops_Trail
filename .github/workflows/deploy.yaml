@@ -1,7 +1,7 @@
 name: Mlops Final lab exam 
 on:  
   push:  
-    branches: [main]
+
     branches-ignore : [main]
     tags : 'v*.*.*'
 
