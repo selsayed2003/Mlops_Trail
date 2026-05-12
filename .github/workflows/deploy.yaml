@@ -1,9 +1,9 @@
 name: Mlops Final lab exam 
 on:  
   push:  
-
-    branches-ignore : [main]
-    tags : 'v*.*.*'
+    branches : [main]
+    # branches-ignore : [main]
+    # tags : 'v*.*.*'
 
 jobs:
   validate:
