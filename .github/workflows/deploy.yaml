@@ -39,7 +39,7 @@ jobs:
   deploy:
     needs: validate
     runs-on: ubutno-latest
-    if: github.ref = 'refs/heads/main' && contains(github.event.head_commit.message, '[train]') 
+    if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[train]') 
     steps:
       - uses: checkout/actions@v4
 
