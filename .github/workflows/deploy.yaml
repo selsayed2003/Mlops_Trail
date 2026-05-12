@@ -27,8 +27,8 @@ jobs:
       env: 
         MLFLOW_URI : ${{secrets.MLFLOW_URI}}
       run: | 
-      python train.py 
-      echo "Run training for model with this id "151" > model-info.txt
+        python train.py 
+        echo "Run training for model with this id "151" > model-info.txt
 
       -name: upload artifact 
       uses: checkout/upload-artifact@v4
